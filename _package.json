@@ -1,0 +1,19 @@
+{
+  "name": "node-poster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^3.3.0",
+    "siege": "^0.2.0"
+  },
+  "dependencies": {
+    "koa": "^2.12.0",
+    "koa-router": "^9.0.1",
+    "koa-static": "^5.0.0",
+    "puppeteer-cluster": "^0.21.0"
+  },
+  "scripts": {
+    "dev": "node src/app.js"
+  }
+}

@@ -1,0 +1,204 @@
+
+> node-poster@1.0.0 dev /Users/dolor/Documents/code/node-poster
+> node src/app.js
+
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
+[Object: null prototype] {}
+TypeError: browser.newPage is not a function
+    at router.get (/Users/dolor/Documents/code/node-poster/src/app.js:79:32)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:363:16
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at /Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-router/lib/router.js:368:31)
+    at dispatch (/Users/dolor/Documents/code/node-poster/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/dolor/Documents/code/node-poster/node_modules/koa-static/index.js:53:15)
