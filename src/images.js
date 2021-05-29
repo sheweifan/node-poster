@@ -40,16 +40,20 @@ module.exports = async () => {
     console.timeEnd('text svg')
 
     console.time('render qrcode')
-    const qrcode = await QRCode.toBuffer('I am a pony!', {
-      margin: 1
-    })
-    image.draw(images(qrcode), 300, 500) //Drawn logo at coordinates (10,10)
+    const qrcode = await QRCode.toBuffer(
+      'https://www.npmjs.com/package/qrcode',
+      {
+        margin: 1,
+        width: 160
+      }
+    )
+    image.draw(images(qrcode), 550, 1144) //Drawn logo at coordinates (10,10)
     console.timeEnd('render qrcode')
 
     const name = `./img/card.${+new Date()}.jpg`
 
     console.time('save')
-    await image.save(name, {
+    const img = await image.encode('jpg', {
       // 将图像保存到一个文件中，质量为90
       quality: 80
     })
@@ -58,7 +62,7 @@ module.exports = async () => {
     // fs.unlink(codePath, () => {})
     console.log(`--------------------------------`)
 
-    return name
+    return img
   } catch (e) {
     console.log(e)
   }
