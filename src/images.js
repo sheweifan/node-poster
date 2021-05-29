@@ -6,6 +6,9 @@ const sharp = require('sharp')
 const path = require('path')
 const Promise = require('bluebird')
 var QRCode = require('qrcode')
+var text2png = require('text2png')
+
+
 
 const imgPath = value => {
   return path.join(__dirname, value)
@@ -21,10 +24,13 @@ Promise.promisifyAll(fs)
 module.exports = async () => {
   try {
     const sourceImg = images(imgPath('../example.png'))
-    
-    console.time('text svg')
 
-    const svg1 = textToSVG.getSVG('测试', {
+    console.time('load source image')
+    const image = images(sourceImg) // 从文件中加载图片
+    console.timeEnd('load source image')
+
+    console.time('text svg')
+    const svg1 = textToSVG.getSVG('测试2222', {
       x: 0, // 文本开头的水平位置（默认值：0）
       y: 0, // 文本的基线的垂直位置（默认值：0）
       fontSize: 50, // 文本的大小（默认：）72
@@ -36,9 +42,7 @@ module.exports = async () => {
       `fill="#000" xmlns="http://www.w3.org/2000/svg"`
     )
 
-    console.timeEnd('text svg')
 
-    console.time('text to buffer')
 
     // const buffer = await sharp(svgOne)
     // .resize(200, 200)
@@ -50,40 +54,36 @@ module.exports = async () => {
     //   .png() // await svg2png(svgOne)
     // .toBuffer()
     // console.log(buffer)
+
     const svgpath = imgPath(`../img/svg${+new Date()}.svg`)
     await fs.writeFileAsync(svgpath, svgOne)
 
-    const buffer = await sharp(svgpath).png().toBuffer()
+    const buffer2 = await sharp(svgpath).png().toBuffer()
+    image.draw(images(buffer2), 100, 100)
     // console.log(`123123`, buffer)
+    console.timeEnd('text svg')
 
-    console.timeEnd('text to buffer')
-
-    // console.log(buffer)
-
-    console.time('load source image')
-    const image = images(sourceImg) // 从文件中加载图片
-    console.timeEnd('load source image')
 
     // console.log(1, image)
 
-    console.time('render text')
-    image.draw(images(buffer), 20, 20)
-    console.timeEnd('render text')
+    // 首次600ms
+    // console.time('render text')
+    // const buffer = text2png('测试中文', {
+    //   output: 'buffer',
+    //   fontSize: 50,
+    //   color: '#000'
+    // })
+    // image.draw(images(buffer), 20, 20)
+    // console.timeEnd('render text')
 
-    console.time('render qrcode img')
-    const codePath = imgPath(`../img/code${+new Date()}.png`)
-    const qrcode = await QRCode.toFile(codePath, 'I am a pony!', {
-      margin: 1
-    })
-    // await fs.writeFileAsync(codePath, dataBuffer)
-    // console.log(qrcode)
-    console.timeEnd('render qrcode img')
 
     console.time('render qrcode')
-    image.draw(images(codePath), 300, 500) //Drawn logo at coordinates (10,10)
+    const qrcode = await QRCode.toBuffer('I am a pony!', {
+      margin: 1
+    })
+    image.draw(images(qrcode), 300, 500) //Drawn logo at coordinates (10,10)
     console.timeEnd('render qrcode')
 
-    // console.log(2, image)
     const name = `./img/card.${+new Date()}.jpg`
 
     console.time('save')
@@ -93,13 +93,14 @@ module.exports = async () => {
     })
     console.timeEnd('save')
 
+    // fs.unlink(codePath, () => {})
     console.log(`--------------------------------`)
-    // console.log(`images.getUsedMemory()`, images.getUsedMemory())
+
 
     setImmediate(() => {
       console.time('delete')
       fs.unlink(svgpath, () => {})
-      fs.unlink(codePath, () => {})
+      // fs.unlink(codePath, () => {})
       console.timeEnd('delete')
     })
 
