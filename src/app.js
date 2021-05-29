@@ -11,56 +11,56 @@ const serve = require('koa-static')
 var Koa = require('koa')
 var Router = require('koa-router')
 
-// const mypuppeteer = require('./puppeteer')
+const mypuppeteer = require('./puppeteer')
 
-const render  = require('./images.js')
+const render = require('./images.js')
 
 var app = new Koa()
 var router = new Router()
 
-router.get('/image', async  ctx => {
+router.get('/image', async ctx => {
   const imgurl = await render()
-      ctx.body = `<img src="${imgurl}" />`
-      ctx.type = 'html'
+  ctx.body = imgurl
+  ctx.type = 'jpg'
 })
 
-// router.get('/poster', async ctx => {
-//   const config = {
-//     poster:
-//       'https://ossimg.xinli001.com/20200610/774a40097f12aa3259ba7111ef69c497.jpeg?ts=' +
-//       +new Date(),
-//     code:
-//       'https://ossimg.xinli001.com/20200610/38c5e1bc0697620cc9432aeb98e3190a.png?ts=' +
-//       +new Date(),
-//     name: 'sheweifan',
-//     width: 750,
-//     height: 1334,
-//     codeSize: 220,
-//     codeRight: 40,
-//     codeBottom: 40
-//   }
-//   try {
-//     const imgUrl = `/img/example.${
-//       +new Date() + '-' + ((Math.random() * 100000000) | 0)
-//     }.jpg`
-//     await mypuppeteer.screenshot(config, {
-//       path: `.${imgUrl}`,
-//       quality: 80,
-//       type: 'jpeg'
-//     })
-//     // ctx.body = {
-//     //   imgUrl,
-//     //   code: 0
-//     // }
-//     ctx.body = `<img src="${imgUrl}" />`
-//     ctx.type = 'html'
-//   } catch (e) {
-//     console.log(e)
-//   }
-// })
+router.get('/poster', async ctx => {
+  const config = {
+    poster:
+      'https://ossimg.xinli001.com/20200610/774a40097f12aa3259ba7111ef69c497.jpeg?ts=' +
+      +new Date(),
+    code:
+      'https://ossimg.xinli001.com/20200610/38c5e1bc0697620cc9432aeb98e3190a.png?ts=' +
+      +new Date(),
+    name: 'sheweifan',
+    width: 750,
+    height: 1334,
+    codeSize: 220,
+    codeRight: 40,
+    codeBottom: 40
+  }
+  try {
+    const imgUrl = `/img/example.${
+      +new Date() + '-' + ((Math.random() * 100000000) | 0)
+    }.jpg`
+    await mypuppeteer.screenshot(config, {
+      path: `.${imgUrl}`,
+      quality: 80,
+      type: 'jpeg'
+    })
+    // ctx.body = {
+    //   imgUrl,
+    //   code: 0
+    // }
+    ctx.body = `<img src="${imgUrl}" />`
+    ctx.type = 'html'
+  } catch (e) {
+    console.log(e)
+  }
+})
 
 app.use(serve('./'))
 app.use(router.routes()).use(router.allowedMethods())
-// mypuppeteer.init().then(() => {
+mypuppeteer.init().then(() => {
   app.listen(3002)
-// })
+})
