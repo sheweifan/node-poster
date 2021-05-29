@@ -6,15 +6,10 @@ const path = require('path')
 const Promise = require('bluebird')
 var QRCode = require('qrcode')
 
-
-
 const imgPath = value => {
   return path.join(__dirname, value)
 }
 
-// // 引入默认背景图
-// const sWidth = sourceImg.width()
-// const sHeight = sourceImg.height()
 const textToSVG = TextToSVG.loadSync(imgPath('../font/weiruanyahei.ttf'))
 
 Promise.promisifyAll(fs)
