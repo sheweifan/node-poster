@@ -1,12 +1,10 @@
 const fs = require('fs')
 const images = require('images')
 const TextToSVG = require('text-to-svg')
-const svg2png = require('svg2png')
 const sharp = require('sharp')
 const path = require('path')
 const Promise = require('bluebird')
 var QRCode = require('qrcode')
-var text2png = require('text2png')
 
 
 
@@ -35,47 +33,16 @@ module.exports = async () => {
       y: 0, // 文本的基线的垂直位置（默认值：0）
       fontSize: 50, // 文本的大小（默认：）72
       // letterSpacing: "",          // 设置字母的间距
-      anchor: 'top' // 坐标中的对象锚点
+      anchor: 'top', // 坐标中的对象锚点
+      attributes: {
+        color: '#000'
+      }
     })
-    const svgOne = svg1.replace(
-      `xmlns="http://www.w3.org/2000/svg"`,
-      `fill="#000" xmlns="http://www.w3.org/2000/svg"`
-    )
 
-
-
-    // const buffer = await sharp(svgOne)
-    // .resize(200, 200)
-    //   .composite([
-    //     {
-    //       input: Buffer.from(svgOne),
-    //     }
-    //   ])
-    //   .png() // await svg2png(svgOne)
-    // .toBuffer()
-    // console.log(buffer)
-
-    const svgpath = imgPath(`../img/svg${+new Date()}.svg`)
-    await fs.writeFileAsync(svgpath, svgOne)
-
-    const buffer2 = await sharp(svgpath).png().toBuffer()
+    const buffer2 = await sharp(Buffer.from(svg1)).png().toBuffer()
     image.draw(images(buffer2), 100, 100)
     // console.log(`123123`, buffer)
     console.timeEnd('text svg')
-
-
-    // console.log(1, image)
-
-    // 首次600ms
-    // console.time('render text')
-    // const buffer = text2png('测试中文', {
-    //   output: 'buffer',
-    //   fontSize: 50,
-    //   color: '#000'
-    // })
-    // image.draw(images(buffer), 20, 20)
-    // console.timeEnd('render text')
-
 
     console.time('render qrcode')
     const qrcode = await QRCode.toBuffer('I am a pony!', {
@@ -95,14 +62,6 @@ module.exports = async () => {
 
     // fs.unlink(codePath, () => {})
     console.log(`--------------------------------`)
-
-
-    setImmediate(() => {
-      console.time('delete')
-      fs.unlink(svgpath, () => {})
-      // fs.unlink(codePath, () => {})
-      console.timeEnd('delete')
-    })
 
     return name
   } catch (e) {
